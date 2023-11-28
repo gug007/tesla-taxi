@@ -1,9 +1,6 @@
 import Typography from "@mui/material/Typography";
 
-import getCarTitle from "../../utils/getCarTitle";
-import CarCondition from "../Cars/CarCondition";
-
-export default function CarTitle({ item }) {
+export default function CarTitle() {
   return (
     <Typography
       variant="h3"
