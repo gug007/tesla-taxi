@@ -5,6 +5,7 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 
 import HeaderCarDesktop from "./HeaderCarDesktop";
+import Link from "@mui/material/Link";
 
 export default function CarPage() {
   const { t } = useTranslation();
@@ -53,7 +54,18 @@ export default function CarPage() {
         pb={{ xs: "40px", md: "100px" }}
         color="white"
       >
-        <Container></Container>
+        <Box display="flex" justifyContent="center">
+          <Link
+            href="tel: +37498125020"
+            sx={{
+              color: "white",
+              fontSize: 18,
+              textDecoration: "none",
+            }}
+          >
+            +374 98 125020
+          </Link>
+        </Box>
       </Box>
     </Box>
   );
