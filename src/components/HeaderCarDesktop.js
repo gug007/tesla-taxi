@@ -1,10 +1,8 @@
-import { useNavigate } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import ButtonBase from "@mui/material/ButtonBase";
 
 export default function HeaderCarDesktop({ item, hiddenBorderBottom }) {
-  const navigate = useNavigate();
   return (
     <Box
       top={0}

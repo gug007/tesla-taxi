@@ -1,21 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import Box from "@mui/material/Box";
+import { useTranslation } from "react-i18next";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 
- import HeaderCarDesktop from "./HeaderCarDesktop";
+import HeaderCarDesktop from "./HeaderCarDesktop";
 
 export default function CarPage() {
-  const [car] = useState({
-    attributes: {
-      name: "test",
-      vehicle_images: [
-        { data: { attributes: { url: "https://via.placeholder.com/150" } } },
-      ],
-      colors: [],
-    },
-  });
-
+  const { t } = useTranslation();
   return (
     <Box
       minHeight="100vh"
@@ -34,11 +26,7 @@ export default function CarPage() {
               fontWeight={700}
               letterSpacing="-0.05em"
             >
-              Rent Tesla with driver in Armenia
-              {/*
-                 Վարձով Tesla վարորդով Հայաստանում
-                 Аренда Tesla с водителем в Армении
-              */}
+              {t("Rent Tesla with driver in Armenia")}
             </Typography>
           </Box>
           <Box>
@@ -50,10 +38,10 @@ export default function CarPage() {
           </Box>
           <Box>
             <Typography mt={2} fontSize={{ xs: 16, md: 24 }} align="center">
-              1 hour - 6,000 dram
+              1 {t("hour")} - 6,000 dram
             </Typography>
             <Typography mt={2} fontSize={{ xs: 16, md: 24 }} align="center">
-              1 day - 40,000 dram
+              1 {t("day")} - 40,000 dram
             </Typography>
           </Box>
         </Container>
