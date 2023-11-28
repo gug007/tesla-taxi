@@ -1,10 +1,8 @@
 import { useState } from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import Hidden from "@mui/material/Hidden";
 import Typography from "@mui/material/Typography";
 
-import HeaderMobile from "../Header/HeaderMobile";
 import CarInfo from "./CarInfo";
 import CarTitle from "./CarTitle";
 import HeaderCarDesktop from "../Header/HeaderCarDesktop";
