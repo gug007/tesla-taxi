@@ -4,7 +4,6 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 
 import CarInfo from "./CarInfo";
-import CarTitle from "./CarTitle";
 import HeaderCarDesktop from "../Header/HeaderCarDesktop";
 
 export default function CarPage() {
