@@ -21,15 +21,14 @@ export default function CarPage() {
   });
 
   return (
-    <Box>
-      <Hidden mdUp>
-        <HeaderMobile item={car?.attributes} />
-      </Hidden>
-      <Hidden mdDown>
-        <HeaderCarDesktop item={car?.attributes} />
-      </Hidden>
-
-      <Box __borderBottom="1px solid #D0D5DD">
+    <Box
+      minHeight="100vh"
+      display="flex"
+      flexDirection="column"
+      justifyContent="space-between"
+    >
+      <Box>
+        <HeaderCarDesktop />
         <Container>
           <Box mt="69px">
             <CarTitle item={car?.attributes} />
@@ -41,7 +40,6 @@ export default function CarPage() {
               src="https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MT322,$PPSW,$W40B,$IBB1&view=STUD_FRONT34&model=m3&size=1920&bkba_opt=1&crop=1300,500,300,300&"
             />
           </Box>
-
           <Box>
             <Typography mt={2} fontSize={{ xs: 16, md: 24 }} align="center">
               1 hour - 6,000 dram

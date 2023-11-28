@@ -11,19 +11,7 @@ export default function CarInfo() {
       pb={{ xs: "40px", md: "100px" }}
       color="white"
     >
-      <Container>
-        <Box
-          mt={{ xs: "22px", md: "45px" }}
-          pb="6px"
-          display="flex"
-          justifyContent="space-between"
-          fontSize={{ xs: "13px", md: "32px" }}
-          fontWeight={700}
-          color="white"
-        >
-          Tesla Rent in Armenia
-        </Box>
-      </Container>
+      <Container></Container>
     </Box>
   );
 }
