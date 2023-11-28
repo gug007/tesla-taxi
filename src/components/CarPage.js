@@ -29,7 +29,7 @@ export default function CarPage() {
               {t("Rent Tesla with driver in Armenia")}
             </Typography>
           </Box>
-          <Box>
+          <Box mt={{ xs: 3, sm: 0 }}>
             <img
               style={{ maxWidth: "100%" }}
               alt=""
@@ -37,10 +37,10 @@ export default function CarPage() {
             />
           </Box>
           <Box>
-            <Typography mt={2} fontSize={{ xs: 16, md: 24 }} align="center">
+            <Typography mt={2} fontSize={{ xs: 20, md: 24 }} align="center">
               1 {t("hour")} - 6,000 dram
             </Typography>
-            <Typography mt={2} fontSize={{ xs: 16, md: 24 }} align="center">
+            <Typography mt={2} fontSize={{ xs: 20, md: 24 }} align="center">
               1 {t("day")} - 40,000 dram
             </Typography>
           </Box>
