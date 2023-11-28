@@ -29,7 +29,19 @@ export default function CarPage() {
         <HeaderCarDesktop />
         <Container>
           <Box mt="69px">
-            <CarTitle item={car?.attributes} />
+            <Typography
+              variant="h3"
+              fontSize={{ md: "61px" }}
+              lineHeight={{ xs: "100%", md: "140%" }}
+              fontWeight={700}
+              letterSpacing="-0.05em"
+            >
+              Rent Tesla with driver in Armenia
+              {/*
+                 Վարձով Tesla վարորդով Հայաստանում
+                 Аренда Tesla с водителем в Армении
+              */}
+            </Typography>
           </Box>
           <Box>
             <img
