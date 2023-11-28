@@ -1,27 +1,12 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import CarsPage from "./components/Cars/CarsPage";
-import CarPage from "./components/Car/CarPage";
-import CarsCustomPage from "./components/CarsCustom/CarsCustomPage";
-import CarCustomPage from "./components/CarCustom/CarCustomPage";
+import CarPage from "./components/CarPage";
 
 export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<CarsPage />} />
-        <Route path="/:id" element={<CarPage />} />
-        <Route path="/cars-custom" element={<CarsCustomPage />} />
-         <Route path="/custom/:id" element={<CarCustomPage />} />
-           <Route
-          path="/car-custom"
-          element={<Navigate to="/cars-custom" replace />}
-        />
+        <Route path="/" element={<CarPage />} />
       </Routes>
     </Router>
   );

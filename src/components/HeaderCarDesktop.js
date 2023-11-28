@@ -22,9 +22,7 @@ export default function HeaderCarDesktop({ item, hiddenBorderBottom }) {
           alignItems="center"
           py="20px"
         >
-          <ButtonBase sx={{ fontSize: 22 }} onClick={() => navigate("/")}>
-            Tesla Taxi Armenia
-          </ButtonBase>
+          <ButtonBase sx={{ fontSize: 22 }}>Tesla Taxi Armenia</ButtonBase>
           <Box display="flex" alignItems="center"></Box>
         </Box>
       </Container>

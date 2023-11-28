@@ -1,10 +1,9 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 
-import CarInfo from "./CarInfo";
-import HeaderCarDesktop from "../Header/HeaderCarDesktop";
+ import HeaderCarDesktop from "./HeaderCarDesktop";
 
 export default function CarPage() {
   const [car] = useState({
@@ -59,7 +58,15 @@ export default function CarPage() {
           </Box>
         </Container>
       </Box>
-      <CarInfo item={car.attributes} />
+      <Box
+        mt="38px"
+        bgcolor="#1B2F39"
+        pt={{ xs: "40px", md: "100px" }}
+        pb={{ xs: "40px", md: "100px" }}
+        color="white"
+      >
+        <Container></Container>
+      </Box>
     </Box>
   );
 }
