@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CarPage from "./components/CarPage";
 import "./18n";
 
+
 export default function App() {
   return (
     <Router>
