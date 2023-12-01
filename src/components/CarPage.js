@@ -68,7 +68,7 @@ export default function CarPage() {
             <WhatsAppIcon htmlColor="	#dcf8c6" />
           </IconButton>
           <IconButton href={`https://wa.me/${phoneNumber}`}>
-            <img width={20} src={ViberIcon} />
+            <img alt="" width={20} src={ViberIcon} />
           </IconButton>
           <Link
             href="tel: +37498125020"
