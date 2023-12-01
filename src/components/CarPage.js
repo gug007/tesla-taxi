@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import IconButton from "@mui/material/IconButton";
 
@@ -64,10 +63,10 @@ export default function CarPage() {
           <IconButton href={`https://t.me/${phoneNumber}`}>
             <TelegramIcon htmlColor="#caf0f8" />
           </IconButton>
-          <IconButton href={`https://wa.me/${phoneNumber}`}>
-            <WhatsAppIcon htmlColor="	#dcf8c6" />
-          </IconButton>
-          <IconButton href={`https://wa.me/${phoneNumber}`}>
+          {/*<IconButton href={`https://wa.me/${phoneNumber}`}>
+            <WhatsAppIcon htmlColor="	#dcf8c6"/>
+          </IconButton>*/}
+          <IconButton href={`viber://chat?number=${phoneNumber}`}>
             <img alt="" width={20} src={ViberIcon} />
           </IconButton>
           <Link
