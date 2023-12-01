@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import TelegramIcon from "@mui/icons-material/Telegram";
-import  IconButton from "@mui/material/IconButton";
+import IconButton from "@mui/material/IconButton";
 
 import HeaderCarDesktop from "./HeaderCarDesktop";
 import ViberIcon from "./ViberIcon.svg";
