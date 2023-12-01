@@ -3,9 +3,15 @@ import Box from "@mui/material/Box";
 import { useTranslation } from "react-i18next";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import TelegramIcon from "@mui/icons-material/Telegram";
+import  IconButton from "@mui/material/IconButton";
 
 import HeaderCarDesktop from "./HeaderCarDesktop";
-import Link from "@mui/material/Link";
+import ViberIcon from "./ViberIcon.svg";
+
+const phoneNumber = "+37498125020";
 
 export default function CarPage() {
   const { t } = useTranslation();
@@ -54,10 +60,20 @@ export default function CarPage() {
         pb={{ xs: "40px", md: "100px" }}
         color="white"
       >
-        <Box display="flex" justifyContent="center">
+        <Box display="flex" justifyContent="center" alignItems="center">
+          <IconButton href={`https://t.me/${phoneNumber}`}>
+            <TelegramIcon htmlColor="#caf0f8" />
+          </IconButton>
+          <IconButton href={`https://wa.me/${phoneNumber}`}>
+            <WhatsAppIcon htmlColor="	#dcf8c6" />
+          </IconButton>
+          <IconButton href={`https://wa.me/${phoneNumber}`}>
+            <img width={20} src={ViberIcon} />
+          </IconButton>
           <Link
             href="tel: +37498125020"
             sx={{
+              ml: 1,
               color: "white",
               fontSize: 18,
               textDecoration: "none",
