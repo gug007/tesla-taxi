@@ -55,7 +55,7 @@ export default function Main() {
                 justifyContent="center"
                 fontSize={textFontSize}
               >
-                Yerevan <ArrowForwardIosIcon sx={{ mt: 0.5, mx: 1 }} />{" "}
+                Kentron <ArrowForwardIosIcon sx={{ mt: 0.5, mx: 1 }} />{" "}
                 Zvartnots
               </Box>
             </Grid>
