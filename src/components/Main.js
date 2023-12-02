@@ -4,13 +4,17 @@ import { useTranslation } from "react-i18next";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
+import Grid from "@mui/material/Grid";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import IconButton from "@mui/material/IconButton";
 
 import Header from "./Header";
 import ViberIcon from "./ViberIcon.svg";
+import { Divider } from "@mui/material";
 
 const phoneNumber = "+37498125020";
+
+const textFontSize = { xs: 20, md: 24 };
 
 export default function Main() {
   const { t } = useTranslation();
@@ -35,20 +39,71 @@ export default function Main() {
               {t("Rent Tesla with driver in Armenia")}
             </Typography>
           </Box>
-          <Box mt={{ xs: 3, sm: 0 }}>
+          <Box mb={3} mt={{ xs: 3, sm: 0 }}>
             <img
               style={{ maxWidth: "100%" }}
               alt=""
               src="https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MT322,$PPSW,$W40B,$IBB1&view=STUD_FRONT34&model=m3&size=1920&bkba_opt=1&crop=1300,500,300,300&"
             />
           </Box>
+          <Grid container spacing={3}>
+            <Grid item xs={12} md={6}>
+              <Box
+                display="flex"
+                justifyContent="center"
+                fontSize={textFontSize}
+              >
+                Yerevan -> Zvartnots
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Box
+                display="flex"
+                justifyContent="center"
+                fontSize={textFontSize}
+              >
+                Yerevan -> Tsaghkadzor
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Box
+                display="flex"
+                justifyContent="center"
+                fontSize={textFontSize}
+              >
+                Yerevan -> Dilijan
+              </Box>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Box
+                display="flex"
+                justifyContent="center"
+                fontSize={textFontSize}
+              >
+                or any other direction
+              </Box>
+            </Grid>
+          </Grid>
+        </Container>
+
+        <Box mt={1} py={3}>
+          <Divider />
+        </Box>
+
+        <Container>
           <Box>
-            <Typography mt={2} fontSize={{ xs: 20, md: 24 }} align="center">
-              1 {t("hour")} - 6,000 dram
-            </Typography>
-            <Typography mt={2} fontSize={{ xs: 20, md: 24 }} align="center">
-              1 {t("day")} - 40,000 dram
-            </Typography>
+            <Grid container spacing={3}>
+              <Grid item xs={12} md={6}>
+                <Typography mt={2} fontSize={textFontSize} align="center">
+                  1 {t("hour")} - 6,000 dram
+                </Typography>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <Typography mt={2} fontSize={textFontSize} align="center">
+                  1 {t("day")} - 40,000 dram
+                </Typography>
+              </Grid>
+            </Grid>
           </Box>
         </Container>
       </Box>
