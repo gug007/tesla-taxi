@@ -7,6 +7,9 @@ import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import IconButton from "@mui/material/IconButton";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import DragHandleIcon from "@mui/icons-material/DragHandle";
 
 import Header from "./Header";
 import ViberIcon from "./ViberIcon.svg";
@@ -53,7 +56,8 @@ export default function Main() {
                 justifyContent="center"
                 fontSize={textFontSize}
               >
-                Yerevan -> Zvartnots
+                Yerevan <ArrowForwardIosIcon sx={{ mt: 0.5, mx: 1 }} />{" "}
+                Zvartnots
               </Box>
             </Grid>
             <Grid item xs={12} md={6}>
@@ -62,7 +66,8 @@ export default function Main() {
                 justifyContent="center"
                 fontSize={textFontSize}
               >
-                Yerevan -> Tsaghkadzor
+                Yerevan <ArrowForwardIosIcon sx={{ mt: 0.5, mx: 1 }} />{" "}
+                Tsaghkadzor
               </Box>
             </Grid>
             <Grid item xs={12} md={6}>
@@ -71,7 +76,7 @@ export default function Main() {
                 justifyContent="center"
                 fontSize={textFontSize}
               >
-                Yerevan -> Dilijan
+                Yerevan <ArrowForwardIosIcon sx={{ mt: 0.5, mx: 1 }} /> Dilijan
               </Box>
             </Grid>
             <Grid item xs={12} md={6}>
@@ -80,27 +85,25 @@ export default function Main() {
                 justifyContent="center"
                 fontSize={textFontSize}
               >
-                or any other direction
+                {t("or any other direction")}
               </Box>
             </Grid>
           </Grid>
         </Container>
-
         <Box mt={1} py={3}>
           <Divider />
         </Box>
-
         <Container>
           <Box>
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <Typography mt={2} fontSize={textFontSize} align="center">
-                  1 {t("hour")} - 6,000 dram
+                  1 {t("hour")} <DragHandleIcon sx={{ mb: -0.5 }} /> 6,000 dram
                 </Typography>
               </Grid>
               <Grid item xs={12} md={6}>
                 <Typography mt={2} fontSize={textFontSize} align="center">
-                  1 {t("day")} - 40,000 dram
+                  1 {t("day")} <DragHandleIcon sx={{ mb: -0.5 }} /> 40,000 dram
                 </Typography>
               </Grid>
             </Grid>
