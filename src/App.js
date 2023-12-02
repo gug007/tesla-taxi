@@ -1,16 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import CarPage from "./components/CarPage";
+import Main from "./components/Main";
 import "./18n";
 
 export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<CarPage />} />
-        <Route path="/am" element={<CarPage />} />
-        <Route path="/en" element={<CarPage />} />
-        <Route path="/ru" element={<CarPage />} />
+        <Route path="/" element={<Main />} />
+        <Route path="/am" element={<Main />} />
+        <Route path="/en" element={<Main />} />
+        <Route path="/ru" element={<Main />} />
       </Routes>
     </Router>
   );

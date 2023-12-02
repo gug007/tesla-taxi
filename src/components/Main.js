@@ -7,12 +7,12 @@ import Link from "@mui/material/Link";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import IconButton from "@mui/material/IconButton";
 
-import HeaderCarDesktop from "./HeaderCarDesktop";
+import Header from "./Header";
 import ViberIcon from "./ViberIcon.svg";
 
 const phoneNumber = "+37498125020";
 
-export default function CarPage() {
+export default function Main() {
   const { t } = useTranslation();
   return (
     <Box
@@ -22,7 +22,7 @@ export default function CarPage() {
       justifyContent="space-between"
     >
       <Box>
-        <HeaderCarDesktop />
+        <Header />
         <Container>
           <Box mt="69px">
             <Typography
