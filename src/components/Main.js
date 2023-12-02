@@ -4,19 +4,18 @@ import { useTranslation } from "react-i18next";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import Grid from "@mui/material/Grid";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import IconButton from "@mui/material/IconButton";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import DragHandleIcon from "@mui/icons-material/DragHandle";
 
 import Header from "./Header";
 import ViberIcon from "./ViberIcon.svg";
 import { Divider } from "@mui/material";
+import Prices from "./Prices";
+import Directions from "./Directions";
 
 const phoneNumber = "+37498125020";
 
-const textFontSize = { xs: 20, md: 24 };
+export const textFontSize = { xs: 20, md: 24 };
 
 export default function Main() {
   const { t } = useTranslation();
@@ -48,66 +47,12 @@ export default function Main() {
               src="https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MT322,$PPSW,$W40B,$IBB1&view=STUD_FRONT34&model=m3&size=1920&bkba_opt=1&crop=1300,500,300,300&"
             />
           </Box>
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={6}>
-              <Box
-                display="flex"
-                justifyContent="center"
-                fontSize={textFontSize}
-              >
-                Kentron <ArrowForwardIosIcon sx={{ mt: 0.5, mx: 1 }} />{" "}
-                Zvartnots
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Box
-                display="flex"
-                justifyContent="center"
-                fontSize={textFontSize}
-              >
-                Yerevan <ArrowForwardIosIcon sx={{ mt: 0.5, mx: 1 }} />{" "}
-                Tsaghkadzor
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Box
-                display="flex"
-                justifyContent="center"
-                fontSize={textFontSize}
-              >
-                Yerevan <ArrowForwardIosIcon sx={{ mt: 0.5, mx: 1 }} /> Dilijan
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Box
-                display="flex"
-                justifyContent="center"
-                fontSize={textFontSize}
-              >
-                {t("or any other direction")}
-              </Box>
-            </Grid>
-          </Grid>
         </Container>
+        <Directions />
         <Box mt={1} py={3}>
           <Divider />
         </Box>
-        <Container>
-          <Box>
-            <Grid container spacing={3}>
-              <Grid item xs={12} md={6}>
-                <Typography mt={2} fontSize={textFontSize} align="center">
-                  1 {t("hour")} <DragHandleIcon sx={{ mb: -0.5 }} /> 6,000 dram
-                </Typography>
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <Typography mt={2} fontSize={textFontSize} align="center">
-                  1 {t("day")} <DragHandleIcon sx={{ mb: -0.5 }} /> 40,000 dram
-                </Typography>
-              </Grid>
-            </Grid>
-          </Box>
-        </Container>
+        <Prices />
       </Box>
       <Box
         mt="38px"
