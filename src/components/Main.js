@@ -8,7 +8,6 @@ import Grid from "@mui/material/Grid";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import IconButton from "@mui/material/IconButton";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
 
 import Header from "./Header";
