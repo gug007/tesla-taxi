@@ -7,6 +7,14 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 import { textFontSize } from "./Main";
 
+function PriceLabel({ number }) {
+  return (
+    <Box ml={1.5} color="#4caf50">
+      {new Intl.NumberFormat().format(number * 6000)} dram
+    </Box>
+  );
+}
+
 export default function Directions() {
   const { t } = useTranslation();
   return (
@@ -14,23 +22,30 @@ export default function Directions() {
       <Grid container spacing={3}>
         <Grid item xs={12} md={6}>
           <Box display="flex" justifyContent="center" fontSize={textFontSize}>
-            Kentron{" "}
+            Zvartnots{" "}
             <ArrowForwardIosIcon color="action" sx={{ mt: 0.5, mx: 1 }} />{" "}
-            Zvartnots
+            Kentron <PriceLabel number={1} />
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
           <Box display="flex" justifyContent="center" fontSize={textFontSize}>
             Yerevan{" "}
             <ArrowForwardIosIcon color="action" sx={{ mt: 0.5, mx: 1 }} />{" "}
-            Tsaghkadzor
+            Tsaghkadzor <PriceLabel number={2} />
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
           <Box display="flex" justifyContent="center" fontSize={textFontSize}>
             Yerevan{" "}
             <ArrowForwardIosIcon color="action" sx={{ mt: 0.5, mx: 1 }} />{" "}
-            Dilijan
+            Dilijan <PriceLabel number={4} />
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Box display="flex" justifyContent="center" fontSize={textFontSize}>
+            Yerevan{" "}
+            <ArrowForwardIosIcon color="action" sx={{ mt: 0.5, mx: 1 }} />{" "}
+            Tbilisi <PriceLabel number={10} />
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
