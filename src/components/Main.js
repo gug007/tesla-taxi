@@ -57,19 +57,19 @@ export default function Main() {
       <Box
         mt="38px"
         bgcolor="#1B2F39"
-        pt={{ xs: "40px", md: "100px" }}
-        pb={{ xs: "40px", md: "100px" }}
+        pt={{ xs: "40px", md: "60px" }}
+        pb={{ xs: "40px", md: "60px" }}
         color="white"
       >
         <Box display="flex" justifyContent="center" alignItems="center">
           <IconButton href={`https://t.me/${phoneNumber}`}>
-            <TelegramIcon htmlColor="#caf0f8" />
+            <TelegramIcon sx={{fontSize: 50}} htmlColor="#caf0f8" />
           </IconButton>
           {/*<IconButton href={`https://wa.me/${phoneNumber}`}>
             <WhatsAppIcon htmlColor="	#dcf8c6"/>
           </IconButton>*/}
           <IconButton href={`viber://chat?number=${phoneNumber}`}>
-            <img alt="" width={20} src={ViberIcon} />
+            <img alt="" width={40} src={ViberIcon} />
           </IconButton>
           <Link
             href="tel: +37498125020"
