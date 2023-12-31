@@ -1,7 +1,6 @@
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import ButtonBase from "@mui/material/ButtonBase";
-import Link from "@mui/material/Link";
 
 import Languages from "./Languages";
 
@@ -36,8 +35,9 @@ export default function Header() {
           </Box>
         </Container>
       </Box>
-      <Container>
-        <Box mt={2} display="flex" justifyContent="flex-end" alignItems="center">
+      {/*
+          <Container>
+        <Box my={2} display="flex" justifyContent="flex-end" alignItems="center">
           <Link
             href="tel: +37498125020"
             sx={{
@@ -49,6 +49,7 @@ export default function Header() {
           </Link>
         </Box>
       </Container>
+      */}
     </>
   );
 }

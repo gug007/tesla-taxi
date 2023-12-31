@@ -28,26 +28,39 @@ export default function Main() {
     >
       <Box>
         <Header />
-        <Container>
-          <Box mt="69px">
-            <Typography
-              variant="h3"
-              fontSize={{ md: "61px" }}
-              lineHeight={{ xs: "100%", md: "140%" }}
-              fontWeight={700}
-              letterSpacing="-0.05em"
-            >
-              {t("Rent Tesla with driver in Armenia")}
-            </Typography>
-          </Box>
-          <Box mb={3} mt={{ xs: 3, sm: 0 }}>
-            <img
-              style={{ maxWidth: "100%" }}
-              alt=""
-              src="https://static-assets.tesla.com/configurator/compositor?context=design_studio_2&options=$MT322,$PPSW,$W40B,$IBB1&view=STUD_FRONT34&model=m3&size=1920&bkba_opt=1&crop=1300,500,300,300&"
-            />
-          </Box>
-        </Container>
+        <Box
+          display="flex"
+          alignItems="space-between"
+          mb={3}
+          height={{ xs: "60vh", md: "80vh" }}
+          overflow="hidden"
+          sx={{
+            backgroundImage: "url(/images/IMG_4186_1.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <Container>
+            <Box mt={3}>
+              <Typography
+                variant="h3"
+                fontSize={{ md: "61px" }}
+                lineHeight={{ xs: "100%", md: "140%" }}
+                fontWeight={700}
+                letterSpacing="-0.05em"
+                sx={{
+                  p: 1,
+                  color: "white",
+                  background: "rgba(0, 0, 0, 0.5)",
+                  backgroundImage:
+                    "linear-gradient(60deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2))",
+                }}
+              >
+                {t("Rent Tesla with driver in Armenia")}
+              </Typography>
+            </Box>
+          </Container>
+        </Box>
         <Directions />
         <Box mt={1} py={3}>
           <Divider />
@@ -63,7 +76,7 @@ export default function Main() {
       >
         <Box display="flex" justifyContent="center" alignItems="center">
           <IconButton href={`https://t.me/${phoneNumber}`}>
-            <TelegramIcon sx={{fontSize: 50}} htmlColor="#caf0f8" />
+            <TelegramIcon sx={{ fontSize: 50 }} htmlColor="#caf0f8" />
           </IconButton>
           {/*<IconButton href={`https://wa.me/${phoneNumber}`}>
             <WhatsAppIcon htmlColor="	#dcf8c6"/>
